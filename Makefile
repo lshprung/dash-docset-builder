@@ -52,8 +52,10 @@ tmp:
 $(ARCHIVE_FILE): $(DOCSET)
 	tar --exclude='.DS_Store' -czf $@ $(DOCSET_DIR)
 
+ifdef MANUAL_URL
 $(MANUAL_FILE): tmp
 	curl -o $@ $(MANUAL_URL)
+endif
 
 $(DOCSET_DIR):
 	mkdir -p $@
