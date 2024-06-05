@@ -1,33 +1,16 @@
-# Dash Docset Template
+# Dash Docset Builder
 
-This is a repository providing a template to package a Dash docset from HTML source documentation. Files that need to be manually configured are listed below. Additional fine tuning is also recommended, depending on the quirks of the documentation being packaged. An example docset packaging script for GNU Make using this template can be seen [here](https://github.com/lshprung/gnu-make-dash-docset)
+This is a repository providing sources building various Dash docsets using a Makefile. Supported docsets can be found under `./configs`.
 
-### `README.template`
+### Documentation
 
-This file will provide a README for the packaging script. Replace `<NAME>`, `<UPSTREAM LINK>`, and `<UPSTREAM HOST>` with appropriate values.
+```
+Usage: make DOCSET_NAME=... [BUILD_DIR=...]
 
-### `Makefile`
+  DOCSET_NAME must be set to the name of a directory under ./configs.
+  BUILD_DIR can be set to a directory to build under. The default is the project root
 
-This file will build the docset.
-
-- `DOCSET_NAME` must be set
-- `MANUAL_FILE` must be set
-	- If the script should download documentation from the internet, `MANUAL_URL` must also be set. If not, ensure a `.tgz` archive of the HTML documentation exists at `tmp/MANUAL.tgz` (where MANUAL is the name of the archive)
-
-### `src/icon.png`
-
-If you want to associate an icon with the docset, it should be saved to `src/icon.png`. Make sure to uncomment the corresponding line in `Makefile` to include the icon in the docset.
-
-### `src/index.sh`
-
-This is the main script that builds the docset index. This script does not require any manual modifications, but you will probably want to make additions/changes to improve the quality of your docset and accomodate any quirks.
-
-### `src/Info.plist`
-
-This file contains metadata for the docset. Replace `<!-- VALUE -->` with appropriate values. It may be useful to refer to the `Info.plist` file of an existing docset for reference.
-
----
-
-### Credits
-
-Created by [lshprung](https://github.com/lshprung), and originally based on [benzado](https://github.com/benzado)'s [gnu-make-dash-docset](https://github.com/benzado/gnu-make-dash-docset).
+Examples:
+  make DOCSET_NAME=GNU_Make
+  make DOCSET_NAME=GNU_Make BUILD_DIR=build/
+```
