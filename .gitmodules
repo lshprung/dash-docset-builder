@@ -1,3 +1,6 @@
 [submodule "src/configs/GNU_Make"]
 	path = src/configs/GNU_Make
 	url = https://github.com/lshprung/gnu-make-dash-docset.git
+[submodule "src/configs/debmake"]
+	path = src/configs/debmake
+	url = https://github.com/lshprung/debmake-dash-docset.git

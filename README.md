@@ -5,10 +5,12 @@ This is a repository providing sources building various Dash docsets using a Mak
 ### Documentation
 
 ```
-Usage: make DOCSET_NAME [BUILD_DIR=...]
+Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...]
 
   DOCSET_NAME must be a directory under ./src/configs.
-  BUILD_DIR can be set to a directory to build under. The default is ./build
+  BUILD_DIR   can be set to a directory to build under. The default is ./build
+  NO_CSS      if defined, build with stylesheets disabled. Supported by GNU_Make
+  LOCALE      specify a locale to build for (see below table for more details). Supported by debmake
 
 Other possible targets:
   archive                            - create .tgz archives for all docsets in BUILD_DIR
@@ -16,6 +18,24 @@ Other possible targets:
   $(BUILD_DIR)/$(DOCSET_NAME).docset - equivalent to DOCSET_NAME
   $(BUILD_DIR)/$(DOCSET_NAME).tgz    - create a .tgz archive of DOCSET_NAME
 ```
+
+#### Supported Definitions
+
+This table shows which supported docsets support which options. All targets support the setting of DOCSET_NAME and BUILD_DIR.
+
+|                                                  |NO_CSS|LOCALE|
+|--------------------------------------------------|------|------|
+|[GNU_Make](http://www.gnu.org/software/make/)     |✓     |      |
+|[debmake](https://salsa.debian.org/debian/debmake)|      |✓ (see [here](./src/configs/debmake/README.md))|
+
+### Build Requirements
+
+This table shows the dependencies for each supported docset. Additionally, all docsets depend on a POSIX-compliant shell (e.g. [bash](https://www.gnu.org/software/bash/)), [make](https://www.gnu.org/software/make/), and [sqlite3](https://www.sqlite.org/index.html).
+
+| |[curl](https://curl.se/)|[po4a](https://po4a.org/)|[pup](https://github.com/ericchiang/pup)|
+|-|------------------------|-------------------------|----------------------------------------|
+|[GNU_Make](http://www.gnu.org/software/make/)     |✓|✓| |
+|[debmake](https://salsa.debian.org/debian/debmake)|✓| |✓|
 
 ### Project Structure
 

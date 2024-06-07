@@ -16,11 +16,13 @@ clean:
 	rm -rf $(BUILD_DIR)/*.docset $(BUILD_DIR)/*.tgz
 
 # All supported docsets should be listed here
-.phony: GNU_Make
-GNU_Make: $(BUILD_DIR)/GNU_Make.docset
+SUPPORTED_TARGETS = \
+debmake \
+GNU_Make
 
-$(BUILD_DIR)/%.docset: 
-	$(SRC_MAKE_CALL) DOCSET_NAME=$(basename $(@F))
+.phony: $(SUPPORTED_TARGETS)
+$(SUPPORTED_TARGETS):
+	$(SRC_MAKE_CALL) DOCSET_NAME=$@
 
 $(BUILD_DIR)/%.tgz: $(BUILD_DIR)/%.docset
 	tar --exclude='.DS_Store' -czf $@ $(basename $@).docset

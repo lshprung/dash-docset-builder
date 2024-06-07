@@ -1,6 +1,7 @@
 # If called directly, Makefile should be called passing the following arguments:
 #   DOCSET_NAME = ... (should be a directory under ./configs)
 #   BUILD_DIR   = ... (create built docsets under the directory BUILD_DIR)
+#   ... (see project README for more options)
 
 ERROR_DOCSET_NAME = $(error DOCSET_NAME is unset)
 .phony: err
