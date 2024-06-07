@@ -1,0 +1,3 @@
+[submodule "src/configs/GNU_Make"]
+	path = src/configs/GNU_Make
+	url = https://github.com/lshprung/gnu-make-dash-docset.git

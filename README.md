@@ -1,6 +1,6 @@
 # Dash Docset Builder
 
-This is a repository providing sources building various Dash docsets using a Makefile. Supported docsets can be found under `./src/configs`. Simply pass the name of the docset as a target for the Makefile (e.g., `make GNU_Make`).
+This is a repository providing sources building various Dash docsets using a Makefile. Supported docsets can be found as a submodule under `./src/configs`. Simply pass the name of the docset as a target for the Makefile (e.g., `make GNU_Make`).
 
 ### Documentation
 
