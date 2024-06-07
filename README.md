@@ -16,3 +16,13 @@ Other possible targets:
   $(BUILD_DIR)/$(DOCSET_NAME).docset - equivalent to DOCSET_NAME
   $(BUILD_DIR)/$(DOCSET_NAME).tgz    - create a .tgz archive of DOCSET_NAME
 ```
+
+### Project Structure
+
+```
+.
+├── src
+│   ├── configs    - supported docsets, including metadata and build scripts
+│   └── scripts    - general purpose scripts
+└── tmp            - intermediate sources (e.g., upstream sources are downloaded to here)
+```

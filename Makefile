@@ -20,10 +20,8 @@ clean:
 .phony: GNU_Make
 GNU_Make: $(BUILD_DIR)/GNU_Make.docset
 
-# All docset files should be listed here
-$(BUILD_DIR)/GNU_Make.docset: 
-	$(SRC_MAKE_CALL) DOCSET_NAME=GNU_Make
+$(BUILD_DIR)/%.docset: 
+	$(SRC_MAKE_CALL) DOCSET_NAME=$(basename $(@F))
 
-# All archive files should be listed here
-$(BUILD_DIR)/GNU_Make.tgz: GNU_Make
-	tar --exclude='.DS_Store' -czf $@ $(BUILD_DIR)/GNU_Make.docset
+$(BUILD_DIR)/%.tgz: $(BUILD_DIR)/%.docset
+	tar --exclude='.DS_Store' -czf $@ $(basename $@).docset
