@@ -11,7 +11,7 @@ Usage: make DOCSET_NAME [BUILD_DIR=...]
   BUILD_DIR can be set to a directory to build under. The default is ./build
 
 Other possible targets:
-  archive                            - create .tgz archives for all docsets in BUILD_DIR (WIP)
+  archive                            - create .tgz archives for all docsets in BUILD_DIR
   clean                              - remove all docsets and .tgz archives from BUILD_DIR
   $(BUILD_DIR)/$(DOCSET_NAME).docset - equivalent to DOCSET_NAME
   $(BUILD_DIR)/$(DOCSET_NAME).tgz    - create a .tgz archive of DOCSET_NAME

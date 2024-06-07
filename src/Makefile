@@ -10,6 +10,7 @@ err: ; $(ERROR_DOCSET_NAME)
 endif
 
 SOURCE_DIR    = src/configs/$(DOCSET_NAME)
+SCRIPTS_DIR   = src/scripts
 DOCSET_DIR    = $(BUILD_DIR)/$(DOCSET_NAME).docset
 CONTENTS_DIR  = $(DOCSET_DIR)/Contents
 RESOURCES_DIR = $(CONTENTS_DIR)/Resources

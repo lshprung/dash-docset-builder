@@ -8,8 +8,7 @@ SRC_MAKE_CALL = $(MAKE) -f src/Makefile BUILD_DIR=$(BUILD_DIR)
 
 # For this target, only archive docsets that have already been built in BUILD_DIR
 .phony: archive
-archive:
-	#TODO
+archive: $(foreach docset,$(wildcard $(BUILD_DIR)/*.docset),$(basename $(docset)).tgz)
 
 # For this target, simply remove all docsets and tgz files from BUILD_DIR
 .phony: clean
