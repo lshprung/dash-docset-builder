@@ -9,8 +9,8 @@ Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...]
 
   DOCSET_NAME must be a directory under ./src/configs.
   BUILD_DIR   can be set to a directory to build under. The default is ./build
-  NO_CSS      if defined, build with stylesheets disabled. Supported by GNU_Make
-  LOCALE      specify a locale to build for (see below table for more details). Supported by debmake
+  NO_CSS      if set to `yes`, build with stylesheets disabled.
+  LOCALE      specify a locale to build for (see below table for more details).
 
 Other possible targets:
   archive                            - create .tgz archives for all docsets in BUILD_DIR
