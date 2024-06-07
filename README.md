@@ -26,3 +26,8 @@ Other possible targets:
 │   └── scripts    - general purpose scripts
 └── tmp            - intermediate sources (e.g., upstream sources are downloaded to here)
 ```
+
+### Credits
+
+- [Louie Shprung](https://github.com/lshprung/)
+- Design is based on [benzado](https://github.com/benzado)'s [gnu-make-dash-docset](https://github.com/benzado/gnu-make-dash-docset)
