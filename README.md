@@ -36,7 +36,7 @@ This table shows which supported docsets support which options. All targets supp
 This table shows the dependencies for each supported docset. Additionally, all docsets depend on a POSIX-compliant shell (e.g. [bash](https://www.gnu.org/software/bash/)), [make](https://www.gnu.org/software/make/), and [sqlite3](https://www.sqlite.org/index.html).
 
 | |[curl](https://curl.se/)|[po4a](https://po4a.org/)|[pup](https://github.com/ericchiang/pup)|[texinfo](https://www.gnu.org/software/texinfo/)|
-|-|------------------------|-------------------------|----------------------------------------|
+|-|------------------------|-------------------------|----------------------------------------|------------------------------------------------|
 |[debmake](https://salsa.debian.org/debian/debmake)|✓|✓| | |
 |[flex](https://github.com/westes/flex)            |✓| |✓|✓|
 |[GNU_Make](http://www.gnu.org/software/make/)     |✓| |✓| |
