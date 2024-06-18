@@ -4,3 +4,6 @@
 [submodule "src/configs/debmake"]
 	path = src/configs/debmake
 	url = https://github.com/lshprung/debmake-dash-docset.git
+[submodule "src/configs/flex"]
+	path = src/configs/flex
+	url = https://github.com/lshprung/flex-dash-docset

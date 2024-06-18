@@ -1,8 +1,10 @@
 # Dash Docset Builder
 
-This is a repository providing sources building various Dash docsets using a Makefile. Supported docsets can be found as a submodule under `./src/configs`. Simply pass the name of the docset as a target for the Makefile (e.g., `make GNU_Make`).
+This is a repository providing sources building various [Dash](https://kapeli.com/dash) docsets using a Makefile. Supported docsets can be found as a submodule under `./src/configs`. Simply pass the name of the docset as a target for the Makefile (e.g., `make GNU_Make`).
 
 ### Documentation
+
+<!-- TODO support for VERSION flag -->
 
 ```
 Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...]
@@ -23,19 +25,21 @@ Other possible targets:
 
 This table shows which supported docsets support which options. All targets support the setting of DOCSET_NAME and BUILD_DIR.
 
-|                                                  |NO_CSS|LOCALE|
+|                                                  |LOCALE|NO_CSS|
 |--------------------------------------------------|------|------|
-|[GNU_Make](http://www.gnu.org/software/make/)     |✓     |      |
-|[debmake](https://salsa.debian.org/debian/debmake)|      |✓ (see [here](./src/configs/debmake/README.md))|
+|[debmake](https://salsa.debian.org/debian/debmake)|✓ (see [here](./src/configs/debmake/README.md))||
+|[flex](https://github.com/westes/flex)|           |      |      |
+|[GNU_Make](http://www.gnu.org/software/make/)     |      |✓     |
 
 ### Build Requirements
 
 This table shows the dependencies for each supported docset. Additionally, all docsets depend on a POSIX-compliant shell (e.g. [bash](https://www.gnu.org/software/bash/)), [make](https://www.gnu.org/software/make/), and [sqlite3](https://www.sqlite.org/index.html).
 
-| |[curl](https://curl.se/)|[po4a](https://po4a.org/)|[pup](https://github.com/ericchiang/pup)|
+| |[curl](https://curl.se/)|[po4a](https://po4a.org/)|[pup](https://github.com/ericchiang/pup)|[texinfo](https://www.gnu.org/software/texinfo/)|
 |-|------------------------|-------------------------|----------------------------------------|
-|[GNU_Make](http://www.gnu.org/software/make/)     |✓|✓| |
-|[debmake](https://salsa.debian.org/debian/debmake)|✓| |✓|
+|[debmake](https://salsa.debian.org/debian/debmake)|✓|✓| | |
+|[flex](https://github.com/westes/flex)            |✓| |✓|✓|
+|[GNU_Make](http://www.gnu.org/software/make/)     |✓| |✓| |
 
 ### Project Structure
 

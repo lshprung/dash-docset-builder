@@ -29,7 +29,7 @@ DOCSET = $(INFO_PLIST_FILE) $(INDEX_FILE) $(ICON_FILE)
 all: $(DOCSET)
 
 ifdef DOCSET_NAME
-include src/configs/$(DOCSET_NAME)/config.mk
+include $(SOURCE_DIR)/config.mk
 endif
 
 tmp:
@@ -47,7 +47,7 @@ $(RESOURCES_DIR): $(CONTENTS_DIR)
 $(INFO_PLIST_FILE): $(SRC_INFO_PLIST_FILE) $(CONTENTS_DIR)
 	cp $(SRC_INFO_PLIST_FILE) $@
 
-ifdef SRC_ICON_FILE
 $(ICON_FILE): $(SRC_ICON_FILE) $(DOCSET_DIR)
+ifdef SRC_ICON_FILE
 	cp $(SRC_ICON_FILE) $@
 endif

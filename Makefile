@@ -18,6 +18,7 @@ clean:
 # All supported docsets should be listed here
 SUPPORTED_TARGETS = \
 debmake \
+flex \
 GNU_Make
 
 .phony: $(SUPPORTED_TARGETS)
