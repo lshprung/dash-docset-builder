@@ -25,11 +25,12 @@ Other possible targets:
 
 This table shows which supported docsets support which options. All targets support the setting of DOCSET_NAME and BUILD_DIR.
 
-|                                                  |LOCALE|NO_CSS|
-|--------------------------------------------------|------|------|
-|[debmake](https://salsa.debian.org/debian/debmake)|✓ (see [here](./src/configs/debmake/README.md))||
-|[flex](https://github.com/westes/flex)|           |      |      |
-|[GNU_Make](http://www.gnu.org/software/make/)     |      |✓     |
+|                                                      |LOCALE|NO_CSS|
+|------------------------------------------------------|------|------|
+|[debmake](https://salsa.debian.org/debian/debmake)    |✓ (see [here](./src/configs/debmake/README.md))||
+|[flex](https://github.com/westes/flex)|               |      |      |
+|[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|      |      |
+|[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |
 
 ### Build Requirements
 
@@ -37,9 +38,10 @@ This table shows the dependencies for each supported docset. Additionally, all d
 
 | |[curl](https://curl.se/)|[po4a](https://po4a.org/)|[pup](https://github.com/ericchiang/pup)|[texinfo](https://www.gnu.org/software/texinfo/)|
 |-|------------------------|-------------------------|----------------------------------------|------------------------------------------------|
-|[debmake](https://salsa.debian.org/debian/debmake)|✓|✓| | |
-|[flex](https://github.com/westes/flex)            |✓| |✓|✓|
-|[GNU_Make](http://www.gnu.org/software/make/)     |✓| |✓| |
+|[debmake](https://salsa.debian.org/debian/debmake)    |✓|✓| | |
+|[flex](https://github.com/westes/flex)                |✓| |✓|✓|
+|[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|✓| |✓| |
+|[GNU_Make](http://www.gnu.org/software/make/)         |✓| |✓| |
 
 ### Project Structure
 

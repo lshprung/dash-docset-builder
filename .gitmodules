@@ -7,3 +7,6 @@
 [submodule "src/configs/flex"]
 	path = src/configs/flex
 	url = https://github.com/lshprung/flex-dash-docset
+[submodule "src/configs/GNU_Autoconf"]
+	path = src/configs/GNU_Autoconf
+	url = https://github.com/lshprung/gnu-autoconf-dash-docset

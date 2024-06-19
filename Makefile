@@ -19,6 +19,7 @@ clean:
 SUPPORTED_TARGETS = \
 debmake \
 flex \
+GNU_Autoconf \
 GNU_Make
 
 .phony: $(SUPPORTED_TARGETS)
