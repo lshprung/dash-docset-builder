@@ -5,6 +5,9 @@ err:
 
 BUILD_DIR     = build
 SRC_MAKE_CALL = $(MAKE) -f src/Makefile BUILD_DIR=$(BUILD_DIR) NO_CSS=$(NO_CSS) LOCALE=$(LOCALE)
+ifdef VERSION
+	SRC_MAKE_CALL += VERSION=$(VERSION)
+endif
 
 # For this target, only archive docsets that have already been built in BUILD_DIR
 .phony: archive

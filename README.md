@@ -4,15 +4,14 @@ This is a repository providing sources building various [Dash](https://kapeli.co
 
 ### Documentation
 
-<!-- TODO support for VERSION flag -->
-
 ```
-Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...]
+Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...] [VERSION=...]
 
   DOCSET_NAME must be a directory under ./src/configs.
-  BUILD_DIR   can be set to a directory to build under. The default is ./build
+  BUILD_DIR   can be set to a directory to build under. The default is ./build.
   NO_CSS      if set to `yes`, build with stylesheets disabled.
   LOCALE      specify a locale to build for (see below table for more details).
+  VERSION     specify an upstream version to build from.
 
 Other possible targets:
   archive                            - create .tgz archives for all docsets in BUILD_DIR
@@ -25,12 +24,12 @@ Other possible targets:
 
 This table shows which supported docsets support which options. All targets support the setting of DOCSET_NAME and BUILD_DIR.
 
-|                                                      |LOCALE|NO_CSS|
-|------------------------------------------------------|------|------|
-|[debmake](https://salsa.debian.org/debian/debmake)    |✓ (see [here](./src/configs/debmake/README.md))||
-|[flex](https://github.com/westes/flex)|               |      |      |
-|[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|      |      |
-|[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |
+|                                                      |LOCALE|NO_CSS|VERSION|
+|------------------------------------------------------|------|------|-------|
+|[debmake](https://salsa.debian.org/debian/debmake)    |✓ (see [here](./src/configs/debmake/README.md))||✓|
+|[flex](https://github.com/westes/flex)                |      |      |✓      |
+|[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|      |      |✓      |
+|[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |       |
 
 ### Build Requirements
 
