@@ -10,3 +10,6 @@
 [submodule "src/configs/GNU_Autoconf"]
 	path = src/configs/GNU_Autoconf
 	url = https://github.com/lshprung/gnu-autoconf-dash-docset
+[submodule "src/configs/GNU_Autoconf_Archive"]
+	path = src/configs/GNU_Autoconf_Archive
+	url = https://github.com/lshprung/gnu-autoconf-archive-dash-docset
