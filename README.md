@@ -4,6 +4,10 @@ This is a repository providing sources building various [Dash](https://kapeli.co
 
 ### Documentation
 
+<!-- TODO:
+  BUILD_FROM_SOURCE - compile the documentation from upstream, rather than downloading from a prebuild source (this is the default behavior for many docset generation scripts)
+-->
+
 ```
 Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...] [VERSION=...]
 
