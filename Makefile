@@ -27,6 +27,7 @@ debmake \
 flex \
 GNU_Autoconf \
 GNU_Autoconf_Archive \
+GNU_Bash \
 GNU_Make
 
 .phony: $(SUPPORTED_TARGETS)
