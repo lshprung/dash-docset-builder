@@ -24,10 +24,11 @@ clean:
 # All supported docsets should be listed here
 SUPPORTED_TARGETS = \
 debmake \
-flex \
+Flex \
 GNU_Autoconf \
 GNU_Autoconf_Archive \
 GNU_Bash \
+GNU_Bison \
 GNU_Make
 
 .phony: $(SUPPORTED_TARGETS)

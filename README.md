@@ -35,6 +35,7 @@ This table shows which supported docsets support which options. All targets supp
 |[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|      |      |✓      |
 |[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/)|||✓|
 |[GNU_Bash](https://www.gnu.org/software/bash/)        |      |      |       |
+|[GNU_Bison](https://www.gnu.org/software/bison/)      |      |      |       |
 |[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |       |
 
 ### Build Requirements
@@ -48,6 +49,7 @@ This table shows the dependencies for each supported docset. Additionally, all d
 |[GNU_Autoconf](https://www.gnu.org/software/autoconf/)                |✓| |✓| |
 |[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/)|✓| |✓|✓|
 |[GNU_Bash](https://www.gnu.org/software/bash/)                        |✓| |✓| | 
+|[GNU_Bison](https://www.gnu.org/software/bison/)                      |✓| |✓| |
 |[GNU_Make](http://www.gnu.org/software/make/)                         |✓| |✓| |
 
 ### Project Structure

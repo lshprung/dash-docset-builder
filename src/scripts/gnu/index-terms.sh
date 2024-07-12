@@ -23,7 +23,7 @@ insert_index_terms() {
 
 insert_term() {
 	LINK="$1"
-	NAME="$(echo "$LINK" | pup -p 'a text{}' | sed 's/\"\"//g' | tr -d \\n)"
+	NAME="$(echo "$LINK" | pup -p 'a text{}' | sed 's/"/\"\"/g' | tr -d \\n)"
 	PAGE_PATH="$(echo "$LINK" | pup -p 'a attr{href}')"
 
 	insert "$DB_PATH" "$NAME" "$TYPE" "$PAGE_PATH"

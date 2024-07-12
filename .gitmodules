@@ -4,8 +4,8 @@
 [submodule "src/configs/debmake"]
 	path = src/configs/debmake
 	url = https://github.com/lshprung/debmake-dash-docset.git
-[submodule "src/configs/flex"]
-	path = src/configs/flex
+[submodule "src/configs/Flex"]
+	path = src/configs/Flex
 	url = https://github.com/lshprung/flex-dash-docset
 [submodule "src/configs/GNU_Autoconf"]
 	path = src/configs/GNU_Autoconf
@@ -16,3 +16,6 @@
 [submodule "src/configs/GNU_Bash"]
 	path = src/configs/GNU_Bash
 	url = https://github.com/lshprung/gnu-bash-dash-docset
+[submodule "src/configs/GNU_Bison"]
+	path = src/configs/GNU_Bison
+	url = https://github.com/lshprung/gnu-bison-dash-docset.git
