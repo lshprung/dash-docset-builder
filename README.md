@@ -34,6 +34,7 @@ This table shows which supported docsets support which options. All targets supp
 |[flex](https://github.com/westes/flex)                |      |      |✓      |
 |[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|      |      |✓      |
 |[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/)|||✓|
+|[GNU_Automake](https://www.gnu.org/software/automake/)|      |      |       |
 |[GNU_Bash](https://www.gnu.org/software/bash/)        |      |      |       |
 |[GNU_Bison](https://www.gnu.org/software/bison/)      |      |      |       |
 |[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |       |
@@ -48,6 +49,7 @@ This table shows the dependencies for each supported docset. Additionally, all d
 |[flex](https://github.com/westes/flex)                                |✓| |✓|✓|
 |[GNU_Autoconf](https://www.gnu.org/software/autoconf/)                |✓| |✓| |
 |[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/)|✓| |✓|✓|
+|[GNU_Automake](https://www.gnu.org/software/automake/)                |✓| |✓| | 
 |[GNU_Bash](https://www.gnu.org/software/bash/)                        |✓| |✓| | 
 |[GNU_Bison](https://www.gnu.org/software/bison/)                      |✓| |✓| |
 |[GNU_Make](http://www.gnu.org/software/make/)                         |✓| |✓| |

@@ -27,6 +27,7 @@ debmake \
 Flex \
 GNU_Autoconf \
 GNU_Autoconf_Archive \
+GNU_Automake \
 GNU_Bash \
 GNU_Bison \
 GNU_Make
@@ -36,4 +37,4 @@ $(SUPPORTED_TARGETS):
 	$(SRC_MAKE_CALL) DOCSET_NAME=$@
 
 $(BUILD_DIR)/%.tgz: $(BUILD_DIR)/%.docset
-	tar --exclude='.DS_Store' -czf $@ $(basename $@).docset
+	tar --exclude='.DS_Store' -czf $@ -C $(BUILD_DIR) $(notdir $(basename $@).docset)

@@ -19,3 +19,6 @@
 [submodule "src/configs/GNU_Bison"]
 	path = src/configs/GNU_Bison
 	url = https://github.com/lshprung/gnu-bison-dash-docset.git
+[submodule "src/configs/GNU_Automake"]
+	path = src/configs/GNU_Automake
+	url = https://github.com/lshprung/gnu-automake-dash-docset.git
