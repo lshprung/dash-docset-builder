@@ -38,6 +38,7 @@ This table shows which supported docsets support which options. All targets supp
 |[GNU_Bash](https://www.gnu.org/software/bash/)        |      |      |       |
 |[GNU_Bison](https://www.gnu.org/software/bison/)      |      |      |       |
 |[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |       |
+|[ncurses](https://invisible-island.net/ncurses/)      |      |      |✓      |
 
 ### Build Requirements
 
@@ -53,6 +54,7 @@ This table shows the dependencies for each supported docset. Additionally, all d
 |[GNU_Bash](https://www.gnu.org/software/bash/)                        |✓| |✓| | 
 |[GNU_Bison](https://www.gnu.org/software/bison/)                      |✓| |✓| |
 |[GNU_Make](http://www.gnu.org/software/make/)                         |✓| |✓| |
+|[ncurses](https://invisible-island.net/ncurses/)                      |✓| |✓| |
 
 ### Project Structure
 

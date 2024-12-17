@@ -30,7 +30,8 @@ GNU_Autoconf_Archive \
 GNU_Automake \
 GNU_Bash \
 GNU_Bison \
-GNU_Make
+GNU_Make \
+ncurses
 
 .phony: $(SUPPORTED_TARGETS)
 $(SUPPORTED_TARGETS):

@@ -22,3 +22,6 @@
 [submodule "src/configs/GNU_Automake"]
 	path = src/configs/GNU_Automake
 	url = https://github.com/lshprung/gnu-automake-dash-docset.git
+[submodule "src/configs/ncurses"]
+	path = src/configs/ncurses
+	url = git@github.com:lshprung/ncurses-dash-docset.git
