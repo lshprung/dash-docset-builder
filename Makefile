@@ -30,6 +30,7 @@ GNU_Autoconf_Archive \
 GNU_Automake \
 GNU_Bash \
 GNU_Bison \
+GNU_Coding_Standards \
 GNU_Make \
 ncurses
 
