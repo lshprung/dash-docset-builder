@@ -28,3 +28,6 @@
 [submodule "src/configs/GNU_Coding_Standards"]
 	path = src/configs/GNU_Coding_Standards
 	url = git@github.com:lshprung/gnu-coding-standards-dash-docset.git
+[submodule "src/configs/GNU_Libtool"]
+	path = src/configs/GNU_Libtool
+	url = git@github.com:lshprung/gnu-libtool-dash-docset.git

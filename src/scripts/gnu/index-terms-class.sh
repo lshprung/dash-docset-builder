@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+#DEBUG="yes"
+
 # shellcheck source=../create_table.sh
 . "$(dirname "$0")"/../create_table.sh
 # shellcheck source=../insert.sh
@@ -25,8 +27,20 @@ insert_index_terms() {
 
 insert_term() {
 	LINK="$1"
-	NAME="$(echo "$LINK" | pup -p 'a text{}' | sed 's/"/\"\"/g' | tr -d \\n)"
-	PAGE_PATH="$(echo "$LINK" | pup -p 'a attr{href}')"
+	NAME="$(echo "$LINK" | pup -p 'a text{}' | sed 's/"/\"\"/g' | head -n 1)"
+	PAGE_PATH="$(echo "$LINK" | pup -p 'a attr{href}' | head -n 1)"
+
+	if [ -n "$DEBUG" ]; then
+		echo "LINK is $LINK" >> /dev/stderr
+		echo "          vanilla NAME is $(echo "$LINK")" >> /dev/stderr
+		echo "01 transformation NAME is $(echo "$LINK" | pup -p 'a text{}')" >> /dev/stderr
+		echo "02 transformation NAME is $(echo "$LINK" | pup -p 'a text{}' | sed 's/"/\"\"/g')" >> /dev/stderr
+		echo "            final NAME is $(echo "$LINK" | pup -p 'a text{}' | sed 's/"/\"\"/g' | head -n 1)" >> /dev/stderr
+		echo "           vanilla PAGE_PATH is $(echo "$LINK")" >> /dev/stderr
+		echo "01 trainsformation PAGE_PATH is $(echo "$LINK" | pup -p 'a attr{href}')" >> /dev/stderr
+		echo "             final PAGE_PATH is $(echo "$LINK" | pup -p 'a attr{href}' | head -n 1)" >> /dev/stderr
+		echo >> /dev/stderr
+	fi
 
 	insert "$DB_PATH" "$NAME" "$TYPE" "$PAGE_PATH"
 }
