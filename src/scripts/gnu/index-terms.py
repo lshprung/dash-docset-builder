@@ -3,6 +3,7 @@
 from bs4 import BeautifulSoup
 import logging
 import os
+from pprint import pformat
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
@@ -25,16 +26,16 @@ class Index_terms:
             self.insert_term(term)
 
     def insert_term(self, term):
-        name = term.get_text()
+        name = term.a.get_text()
         name = name.replace('"', '""')
         name = name.replace('\n', '')
 
-        page_path = term['href']
+        page_path = term.a['href']
         #page_path = page_path.head(1)
 
-        logging.debug("term is " + term)
-        logging.debug("name is " + name)
-        logging.debug("page_path is " + page_path)
+        logging.debug("term is " + pformat(term))
+        logging.debug("name is " + pformat(name))
+        logging.debug("page_path is " + pformat(page_path))
 
         insert(self.db_path, name, self.type, page_path)
 
