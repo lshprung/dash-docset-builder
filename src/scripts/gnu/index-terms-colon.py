@@ -3,6 +3,8 @@
 from bs4 import BeautifulSoup
 import logging
 import os
+from pprint import pformat
+import re
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
@@ -10,41 +12,37 @@ from create_table import create_table
 from insert import insert
 
 class Index_terms:
-    def __init__(self, type, index_entry_class, db_path, html_path):
+    def __init__(self, type, db_path, html_path):
         self.type = type
-        self.index_entry_class = index_entry_class
         self.db_path = db_path
         self.html_path = html_path
 
-    # Get each term from an index page and insert
     def insert_index_terms(self):
         soup = BeautifulSoup(open(self.html_path), 'html.parser')
-        terms = soup.find_all(class_=self.index_entry_class)
+        terms = soup.find_all("td")
 
         for term in terms:
+            logging.debug("Checking term " + pformat(term))
+            logging.debug("\tget_text() produces " + pformat(term.get_text()))
+        for term in filter(lambda x: re.search(r'.*:$', x.get_text()), terms):
             self.insert_term(term)
 
     def insert_term(self, term):
-        name = term.get_text()
+        name = term.a.get_text()
         name = name.replace('"', '""')
         name = name.replace('\n', '')
 
-        page_path = term['href']
-        #page_path = page_path.head(1)
-
-        logging.debug("term is " + term)
-        logging.debug("name is " + name)
-        logging.debug("page_path is " + page_path)
+        page_path = term.a['href']
 
         insert(self.db_path, name, self.type, page_path)
 
+
 if __name__ == '__main__':
     type = sys.argv[1]
-    index_entry_class = sys.argv[2]
-    db_path = sys.argv[3]
-    html_path = sys.argv[4]
-
-    main = Index_terms(type, index_entry_class, db_path, html_path)
+    db_path = sys.argv[2]
+    html_path = sys.argv[3]
 
     create_table(db_path)
+    main = Index_terms(type, db_path, html_path)
+
     main.insert_index_terms()
