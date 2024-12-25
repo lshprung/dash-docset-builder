@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import logging
+from pprint import pformat
 import sqlite3
 import sys
 
@@ -16,8 +17,11 @@ def insert(db_path, name, type, page_path):
     cur = con.cursor()
     query = "INSERT INTO searchIndex(name, type, path) VALUES (\"{name}\",\"{type}\",\"{page_path}\");".format(name = name, type = type, page_path = page_path)
 
-    cur.execute(query)
-    con.commit()
+    try:
+        cur.execute(query)
+        con.commit()
+    except sqlite3.IntegrityError as e:
+        logging.warning("Skipping query: " + pformat(e))
     con.close()
 
 if __name__ == '__main__':
