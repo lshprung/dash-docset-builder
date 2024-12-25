@@ -24,13 +24,15 @@ class Index_terms:
         for term in terms:
             logging.debug("Checking term " + pformat(term))
             logging.debug("\tget_text() produces " + pformat(term.get_text()))
-        for term in filter(lambda x: re.search(r'.*:$', x.get_text()), terms):
+        for term in filter(lambda x: re.search(r'.*:$', x.get_text().lstrip().rstrip()), terms):
             self.insert_term(term)
 
     def insert_term(self, term):
         name = term.a.get_text()
         name = name.replace('"', '""')
         name = name.replace('\n', '')
+        name = name.lstrip()
+        name = re.sub(r'\s{3,}', ' ', name)
 
         page_path = term.a['href']
 
