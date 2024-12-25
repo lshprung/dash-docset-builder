@@ -4,7 +4,7 @@ import logging
 import sqlite3
 import sys
 
-logging.basicConfig(level="DEBUG")
+#logging.basicConfig(level="DEBUG")
 
 def insert(db_path, name, type, page_path):
     logging.debug("Inserting into " + db_path + " with the following:")
