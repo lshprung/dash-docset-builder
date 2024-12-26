@@ -44,21 +44,7 @@ This table shows which supported docsets support which options. All targets supp
 
 ### Build Requirements
 
-This table shows the dependencies for each supported docset. Additionally, all docsets depend on a POSIX-compliant shell (e.g. [bash](https://www.gnu.org/software/bash/)), [make](https://www.gnu.org/software/make/), and [sqlite3](https://www.sqlite.org/index.html).
-
-| |[curl](https://curl.se/)|[po4a](https://po4a.org/)|[pup](https://github.com/ericchiang/pup)|[texinfo](https://www.gnu.org/software/texinfo/)|
-|-|------------------------|-------------------------|----------------------------------------|------------------------------------------------|
-|[debmake](https://salsa.debian.org/debian/debmake)                    |✓|✓| | |
-|[flex](https://github.com/westes/flex)                                |✓| |✓|✓|
-|[GNU_Autoconf](https://www.gnu.org/software/autoconf/)                |✓| |✓| |
-|[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/)|✓| |✓|✓|
-|[GNU_Automake](https://www.gnu.org/software/automake/)                |✓| |✓| | 
-|[GNU_Bash](https://www.gnu.org/software/bash/)                        |✓| |✓| | 
-|[GNU_Bison](https://www.gnu.org/software/bison/)                      |✓| |✓| |
-|[GNU_Coding_Standards](https://savannah.gnu.org/projects/gnustandards)|✓| |✓| |
-|[GNU_Libtool](https://www.gnu.org/software/libtool/)                  |✓| |✓| |
-|[GNU_Make](http://www.gnu.org/software/make/)                         |✓| |✓| |
-|[ncurses](https://invisible-island.net/ncurses/)                      |✓| |✓| |
+All docsets depend on [python3](https://www.python.org/) and [make](https://www.gnu.org/software/make/) to build. Some additional dependencies may be required if the docset is being built from source (rather than from an html source)
 
 ### Project Structure
 

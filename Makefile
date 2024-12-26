@@ -39,5 +39,8 @@ ncurses
 $(SUPPORTED_TARGETS):
 	$(SRC_MAKE_CALL) DOCSET_NAME=$@
 
+.phony: all
+all: $(SUPPORTED_TARGETS)
+
 $(BUILD_DIR)/%.tgz: $(BUILD_DIR)/%.docset
 	tar --exclude='.DS_Store' -czf $@ -C $(BUILD_DIR) $(notdir $(basename $@).docset)
