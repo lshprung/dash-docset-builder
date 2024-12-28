@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import logging
 import os
 from pprint import pformat
+import re
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
@@ -32,6 +33,8 @@ class Index_terms:
 
         page_path = term.a['href']
         #page_path = page_path.head(1)
+        page_path = os.path.join(os.path.dirname(self.html_path), page_path)
+        page_path = re.sub(r'^.*Contents.Resources.Documents.', r'', page_path)
 
         logging.debug("term is " + pformat(term))
         logging.debug("name is " + pformat(name))

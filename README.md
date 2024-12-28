@@ -32,6 +32,7 @@ This table shows which supported docsets support which options. All targets supp
 |------------------------------------------------------|------|------|-------|
 |[debmake](https://salsa.debian.org/debian/debmake)    |✓ (see [here](./src/configs/debmake/README.md))||✓|
 |[flex](https://github.com/westes/flex)                |      |      |✓      |
+|[glibc (GNU C Library)](https://www.gnu.org/software/libc/libc.html)|||✓      |
 |[GNU_Autoconf](https://www.gnu.org/software/autoconf/)|      |      |✓      |
 |[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/)|||✓|
 |[GNU_Automake](https://www.gnu.org/software/automake/)|      |      |       |

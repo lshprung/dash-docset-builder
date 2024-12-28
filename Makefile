@@ -21,10 +21,16 @@ archive: $(foreach docset,$(wildcard $(BUILD_DIR)/*.docset),$(basename $(docset)
 clean:
 	rm -rf $(BUILD_DIR)/*.docset $(BUILD_DIR)/*.tgz
 
+# For this target, remove everything from tmp/
+.phony: dist-clean
+dist-clean: clean
+	rm -rf tmp/*
+
 # All supported docsets should be listed here
 SUPPORTED_TARGETS = \
 debmake \
 Flex \
+glibc \
 GNU_Autoconf \
 GNU_Autoconf_Archive \
 GNU_Automake \

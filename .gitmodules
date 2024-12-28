@@ -34,3 +34,6 @@
 [submodule "src/configs/GNU_Guix"]
 	path = src/configs/GNU_Guix
 	url = https://github.com/lshprung/gnu-guix-dash-docset
+[submodule "src/configs/glibc"]
+	path = src/configs/glibc
+	url = https://github.com/lshprung/gnu-libc-dash-docset
