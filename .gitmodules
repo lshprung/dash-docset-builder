@@ -31,3 +31,6 @@
 [submodule "src/configs/GNU_Libtool"]
 	path = src/configs/GNU_Libtool
 	url = git@github.com:lshprung/gnu-libtool-dash-docset.git
+[submodule "src/configs/GNU_Guix"]
+	path = src/configs/GNU_Guix
+	url = https://github.com/lshprung/gnu-guix-dash-docset
