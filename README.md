@@ -39,6 +39,7 @@ This table shows which supported docsets support which options. All targets supp
 |[GNU_Bash](https://www.gnu.org/software/bash/)        |      |      |       |
 |[GNU_Bison](https://www.gnu.org/software/bison/)      |      |      |       |
 |[GNU_Coding_Standards](https://savannah.gnu.org/projects/gnustandards)||||
+|[GNU_Coreutils](https://www.gnu.org/software/coreutils)||||
 |[GNU_Guix](https://guix.gnu.org/)                     |      |      |✓      |
 |[GNU_Libtool](https://www.gnu.org/software/libtool/)  |      |      |       |
 |[GNU_Make](http://www.gnu.org/software/make/)         |      |✓     |       |

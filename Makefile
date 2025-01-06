@@ -37,6 +37,7 @@ GNU_Automake \
 GNU_Bash \
 GNU_Bison \
 GNU_Coding_Standards \
+GNU_Coreutils \
 GNU_Guix \
 GNU_Libtool \
 GNU_Make \
