@@ -37,3 +37,6 @@
 [submodule "src/configs/glibc"]
 	path = src/configs/glibc
 	url = https://github.com/lshprung/gnu-libc-dash-docset
+[submodule "src/configs/GNU_Coreutils"]
+	path = src/configs/GNU_Coreutils
+	url = https://github.com/lshprung/gnu-coreutils-dash-docset
