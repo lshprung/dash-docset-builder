@@ -30,7 +30,7 @@ This table shows which supported docsets support which options. All targets supp
 
 |                                                      |LOCALE|NO_CSS|VERSION|
 |------------------------------------------------------|------|------|-------|
-|[debmake](https://salsa.debian.org/debian/debmake) ([latest docset release](https://github.com/lshprung/debmake-dash-docset/releases/tag/v1.20))|✓ (see [here](./src/configs/debmake/README.md))||✓|
+|[debmake](https://salsa.debian.org/debian/debmake) ([latest docset release](https://github.com/lshprung/debmake-dash-docset/releases/tag/v1.22))|✓ (see [here](./src/configs/debmake/README.md))||✓|
 |[flex](https://github.com/westes/flex) ([latest docset release](https://github.com/lshprung/flex-dash-docset/releases/tag/v2.6.4))|||✓|
 |[glibc (GNU C Library)](https://www.gnu.org/software/libc/libc.html) ([latest docset release](https://github.com/lshprung/gnu-libc-dash-docset/releases/tag/2.40))|||✓|
 |[GNU_Autoconf](https://www.gnu.org/software/autoconf/) ([latest docset release](https://github.com/lshprung/gnu-autoconf-dash-docset/releases/tag/v2.72_1))|||✓|
