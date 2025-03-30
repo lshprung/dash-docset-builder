@@ -24,13 +24,13 @@
 	url = https://github.com/lshprung/gnu-automake-dash-docset.git
 [submodule "src/configs/ncurses"]
 	path = src/configs/ncurses
-	url = git@github.com:lshprung/ncurses-dash-docset.git
+	url = https://github.com/lshprung/ncurses-dash-docset.git
 [submodule "src/configs/GNU_Coding_Standards"]
 	path = src/configs/GNU_Coding_Standards
-	url = git@github.com:lshprung/gnu-coding-standards-dash-docset.git
+	url = https://github.com/lshprung/gnu-coding-standards-dash-docset.git
 [submodule "src/configs/GNU_Libtool"]
 	path = src/configs/GNU_Libtool
-	url = git@github.com:lshprung/gnu-libtool-dash-docset.git
+	url = https://github.com/lshprung/gnu-libtool-dash-docset.git
 [submodule "src/configs/GNU_Guix"]
 	path = src/configs/GNU_Guix
 	url = https://github.com/lshprung/gnu-guix-dash-docset
