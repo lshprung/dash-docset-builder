@@ -31,19 +31,19 @@ This table shows which supported docsets support which options. All targets supp
 |                                                      |LOCALE|NO_CSS|VERSION|
 |------------------------------------------------------|------|------|-------|
 |[debmake](https://salsa.debian.org/debian/debmake) ([latest docset release](https://github.com/lshprung/debmake-dash-docset/releases/latest))|✓ (see [here](./src/configs/debmake/README.md))||✓|
-|[flex](https://github.com/westes/flex) ([latest docset release](https://github.com/lshprung/flex-dash-docset/releases/latest)|||✓|
+|[flex](https://github.com/westes/flex) ([latest docset release](https://github.com/lshprung/flex-dash-docset/releases/latest))|||✓|
 |[glibc (GNU C Library)](https://www.gnu.org/software/libc/libc.html) ([latest docset release](https://github.com/lshprung/gnu-libc-dash-docset/releases/latest))|||✓|
-|[GNU_Autoconf](https://www.gnu.org/software/autoconf/) ([latest docset release](https://github.com/lshprung/gnu-autoconf-dash-docset/releases/latest)|||✓|
-|[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/) ([latest docset release](https://github.com/lshprung/gnu-autoconf-archive-dash-docset/releases/latest)|||✓|
-|[GNU_Automake](https://www.gnu.org/software/automake/) ([latest docset release](https://github.com/lshprung/gnu-automake-dash-docset/releases/latest)||||
-|[GNU_Bash](https://www.gnu.org/software/bash/) ([latest docset release](https://github.com/lshprung/gnu-bash-dash-docset/releases/latest)||||
-|[GNU_Bison](https://www.gnu.org/software/bison/) ([latest docset release](https://github.com/lshprung/gnu-bison-dash-docset/releases/latest)||||
-|[GNU_Coding_Standards](https://savannah.gnu.org/projects/gnustandards) ([latest docset release](https://github.com/lshprung/gnu-coding-standards-dash-docset/releases/latest)||||
-|[GNU_Coreutils](https://www.gnu.org/software/coreutils) ([latest docset release](https://github.com/lshprung/gnu-coreutils-dash-docset/releases/latest)||||
-|[GNU_Guix](https://guix.gnu.org/) ([latest docset release](https://github.com/lshprung/gnu-guix-dash-docset/releases/latest)|||✓|
-|[GNU_Libtool](https://www.gnu.org/software/libtool/) ([latest docset release](https://github.com/lshprung/gnu-libtool-dash-docset/releases/latest)||||
-|[GNU_Make](http://www.gnu.org/software/make/) ([latest docset release](https://github.com/lshprung/gnu-make-dash-docset/releases/latest)||✓||
-|[ncurses](https://invisible-island.net/ncurses/) ([latest docset release](https://github.com/lshprung/ncurses-dash-docset/releases/latest)|||✓|
+|[GNU_Autoconf](https://www.gnu.org/software/autoconf/) ([latest docset release](https://github.com/lshprung/gnu-autoconf-dash-docset/releases/latest))|||✓|
+|[GNU_Autoconf_Archive](https://www.gnu.org/software/autoconf-archive/) ([latest docset release](https://github.com/lshprung/gnu-autoconf-archive-dash-docset/releases/latest))|||✓|
+|[GNU_Automake](https://www.gnu.org/software/automake/) ([latest docset release](https://github.com/lshprung/gnu-automake-dash-docset/releases/latest))||||
+|[GNU_Bash](https://www.gnu.org/software/bash/) ([latest docset release](https://github.com/lshprung/gnu-bash-dash-docset/releases/latest))||||
+|[GNU_Bison](https://www.gnu.org/software/bison/) ([latest docset release](https://github.com/lshprung/gnu-bison-dash-docset/releases/latest))||||
+|[GNU_Coding_Standards](https://savannah.gnu.org/projects/gnustandards) ([latest docset release](https://github.com/lshprung/gnu-coding-standards-dash-docset/releases/latest))||||
+|[GNU_Coreutils](https://www.gnu.org/software/coreutils) ([latest docset release](https://github.com/lshprung/gnu-coreutils-dash-docset/releases/latest))||||
+|[GNU_Guix](https://guix.gnu.org/) ([latest docset release](https://github.com/lshprung/gnu-guix-dash-docset/releases/latest))|||✓|
+|[GNU_Libtool](https://www.gnu.org/software/libtool/) ([latest docset release](https://github.com/lshprung/gnu-libtool-dash-docset/releases/latest))||||
+|[GNU_Make](http://www.gnu.org/software/make/) ([latest docset release](https://github.com/lshprung/gnu-make-dash-docset/releases/latest))||✓||
+|[ncurses](https://invisible-island.net/ncurses/) ([latest docset release](https://github.com/lshprung/ncurses-dash-docset/releases/latest))|||✓|
 
 ### Build Requirements
 
