@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dash_docset_builder"
+version = "0.1"
+authors = [
+	{ name="Louie Shprung", email="lshprung@tutanota.com" }
+]
+description = "Library for generating dash docsets"
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+	"Environment :: Console",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3"
+]
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/lshprung/dash-docset-builder"
+Issues = "https://github.com/lshprung/dash-docset-builder/issues"

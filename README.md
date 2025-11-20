@@ -1,12 +1,9 @@
 # Dash Docset Builder
 
-This is a repository providing sources building various [Dash](https://kapeli.com/dash) docsets using a Makefile. Supported docsets can be found as a submodule under `./src/configs`. Simply pass the name of the docset as a target for the Makefile (e.g., `make GNU_Make`).
-
-### Documentation
+This is a repository providing common sources for building various [Dash](https://kapeli.com/dash) docsets, as required by the python modules listed below.
 
 <!-- TODO:
   BUILD_FROM_SOURCE - compile the documentation from upstream, rather than downloading from a prebuild source (this is the default behavior for many docset generation scripts)
--->
 
 ```
 Usage: make DOCSET_NAME [BUILD_DIR=...] [NO_CSS=yes] [LOCALE=...] [VERSION=...]
@@ -23,11 +20,9 @@ Other possible targets:
   $(BUILD_DIR)/$(DOCSET_NAME).docset - equivalent to DOCSET_NAME
   $(BUILD_DIR)/$(DOCSET_NAME).tgz    - create a .tgz archive of DOCSET_NAME
 ```
+-->
 
-#### Supported Definitions
-
-This table shows which supported docsets support which options. All targets support the setting of DOCSET_NAME and BUILD_DIR.
-
+<!--
 |                                                      |LOCALE|NO_CSS|VERSION|
 |------------------------------------------------------|------|------|-------|
 |[debmake](https://salsa.debian.org/debian/debmake) ([latest docset release](https://github.com/lshprung/debmake-dash-docset/releases/latest))|✓ (see [here](./src/configs/debmake/README.md))||✓|
@@ -63,3 +58,5 @@ All docsets depend on [python3](https://www.python.org/) and [make](https://www.
 
 - [Louie Shprung](https://github.com/lshprung/)
 - Design is based on [benzado](https://github.com/benzado)'s [gnu-make-dash-docset](https://github.com/benzado/gnu-make-dash-docset)
+
+-->
