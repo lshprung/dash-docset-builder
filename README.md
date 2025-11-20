@@ -1,6 +1,25 @@
 # Dash Docset Builder
 
-This is a repository providing common sources for building various [Dash](https://kapeli.com/dash) docsets, as required by the python modules listed below.
+This is a repository providing common sources for building various 
+[Dash](https://kapeli.com/dash) docsets, as required by the python modules 
+listed below.
+
+|                                                     |Upstream|Latest Release|
+|-----------------------------------------------------|--------|--------------|
+|[debmake](https://github.com/lshprung/debmake-dash-docset)|[link](https://salsa.debian.org/debian/debmake)|[link](https://github.com/lshprung/debmake-dash-docset/releases/latest)|
+|[flex](https://github.com/lshprung/flex-dash-docset)|[link](https://github.com/westes/flex)|[link](https://github.com/lshprung/flex-dash-docset/releases/latest)|
+|[glibc (GNU C Library](https://github.com/lshprung/gnu-libc-dash-docset)|[link](https://www.gnu.org/software/libc/libc.html)|[link](https://github.com/lshprung/gnu-libc-dash-docset/releases/latest)|
+|[GNU Autoconf](https://github.com/lshprung/gnu-autoconf-dash-docset)|[link](https://www.gnu.org/software/autoconf/)|[link](https://github.com/lshprung/gnu-autoconf-dash-docset/releases/latest)|
+|[GNU Autoconf Archive](https://github.com/lshprung/gnu-autoconf-archive-dash-docset)|[link](https://www.gnu.org/software/autoconf-archive/)|[link](https://github.com/lshprung/gnu-autoconf-archive-dash-docset/releases/latest)|
+|[GNU Automake](https://github.com/lshprung/gnu-automake-dash-docset)|[link](https://www.gnu.org/software/automake/)|[link](https://github.com/lshprung/gnu-automake-dash-docset/releases/latest)|
+|[GNU Bash](https://github.com/lshprung/gnu-bash-dash-docset)|[link](https://www.gnu.org/software/bash/)|[link](https://github.com/lshprung/gnu-bash-dash-docset/releases/latest)|
+|[GNU Bison](https://github.com/lshprung/gnu-bison-dash-docset)|[link](https://www.gnu.org/software/bison/)|[link](https://github.com/lshprung/gnu-bison-dash-docset/releases/latest)|
+|[GNU Coding Standards](https://github.com/lshprung/gnu-coding-standards-dash-docset)|[link](https://savannah.gnu.org/projects/gnustandards)|[link](https://github.com/lshprung/gnu-coding-standards-dash-docset/releases/latest)|
+|[GNU Coreutils](https://github.com/lshprung/gnu-coreutils-dash-docset)|[link](https://www.gnu.org/software/coreutils)|[link](https://github.com/lshprung/gnu-coreutils-dash-docset/releases/latest)|
+|[GNU Guix](https://github.com/lshprung/gnu-guix-dash-docset)|[link](https://guix.gnu.org/)|[link](https://github.com/lshprung/gnu-guix-dash-docset/releases/latest)|
+|[GNU Libtool](https://github.com/lshprung/gnu-libtool-dash-docset)|[link](https://www.gnu.org/software/libtool/)|[link](https://github.com/lshprung/gnu-libtool-dash-docset/releases/latest)|
+|[GNU Make](https://github.com/lshprung/gnu-make-dash-docset)|[link](http://www.gnu.org/software/make/)|[link](https://github.com/lshprung/gnu-make-dash-docset/releases/latest)|
+|[ncurses](https://github.com/lshprung/ncurses-dash-docset)|[link](https://invisible-island.net/ncurses/)|[link](https://github.com/lshprung/ncurses-dash-docset/releases/latest)|
 
 <!-- TODO:
   BUILD_FROM_SOURCE - compile the documentation from upstream, rather than downloading from a prebuild source (this is the default behavior for many docset generation scripts)
