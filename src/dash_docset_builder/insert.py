@@ -7,7 +7,7 @@ import sys
 
 logging.basicConfig(level="DEBUG")
 
-def insert(db_path, name, type, page_path):
+def insert(db_path: str, name: str, type: str, page_path: str):
     logging.debug("Inserting into " + db_path + " with the following:")
     logging.debug("\tname = " + name)
     logging.debug("\ttype = " + type)
@@ -18,7 +18,7 @@ def insert(db_path, name, type, page_path):
     query = "INSERT INTO searchIndex(name, type, path) VALUES (\"{name}\",\"{type}\",\"{page_path}\");".format(name = name, type = type, page_path = page_path)
 
     try:
-        cur.execute(query)
+        _ = cur.execute(query)
         con.commit()
     except sqlite3.IntegrityError as e:
         logging.warning("Skipping query: " + pformat(e))

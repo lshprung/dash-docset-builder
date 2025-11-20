@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 import sys
 
-def get_title(html_path): 
+def get_title(html_path: str): 
     soup = BeautifulSoup(open(html_path), 'html.parser')
     title = soup.title.get_text()
     # Remove newline characters
