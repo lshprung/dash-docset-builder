@@ -15,6 +15,10 @@ classifiers = [
 	"Operating System :: OS Independent",
 	"Programming Language :: Python :: 3"
 ]
+dependencies = [
+	"beautifulsoup4",
+	"requests"
+]
 license = "GPL-3.0-or-later"
 license-files = ["LICENSE"]
 

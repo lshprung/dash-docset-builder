@@ -1,9 +1,6 @@
-#!/usr/bin/env python3
-
 from bs4 import BeautifulSoup
-import sys
 
-def get_title(html_path: str): 
+def get_title(html_path: str) -> str: 
     soup = BeautifulSoup(open(html_path), 'html.parser')
     title = soup.title.get_text()
     # Remove newline characters
@@ -12,6 +9,3 @@ def get_title(html_path: str):
     title = title.replace('"', '""')
 
     return title
-
-if __name__ == '__main__':
-    print(get_title(sys.argv[1]))

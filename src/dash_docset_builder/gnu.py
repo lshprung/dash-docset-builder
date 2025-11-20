@@ -6,7 +6,8 @@ import os
 from pprint import pformat
 import re
 
-from dash_docset_builder import create_table, insert
+from .create_table import create_table
+from .insert import insert
 
 class Index_Terms:
     def __init__(self, 
@@ -14,7 +15,7 @@ class Index_Terms:
                  db_path: str, 
                  html_path: str, 
                  index_entry_class: str | None = None
-    ):
+    ) -> None:
         self.type: str = type
         self.db_path: str = db_path
         self.html_path: str = html_path
@@ -23,7 +24,7 @@ class Index_Terms:
         create_table(db_path)
         self.insert_index_terms()
 
-    def insert_index_terms(self):
+    def insert_index_terms(self) -> None:
         soup: BeautifulSoup = BeautifulSoup(
                 open(self.html_path), 'html.parser'
         )
@@ -48,7 +49,7 @@ class Index_Terms:
         for term in terms:
             self.insert_term(term)
 
-    def insert_term(self, term: Tag):
+    def insert_term(self, term: Tag) -> None:
         name: str
         if term.a:
             name = term.a.get_text()
@@ -59,7 +60,14 @@ class Index_Terms:
 
             # TODO make this a Pathlib object instead
             page_path = str(term.a['href'])
-            page_path = os.path.join(os.path.dirname(self.html_path), page_path)
-            page_path = re.sub(r'^.*Contents.Resources.Documents.', r'', page_path)
+            page_path = os.path.join(
+                    os.path.dirname(self.html_path), 
+                    page_path
+            )
+            page_path = re.sub(
+                    r'^.*Contents.Resources.Documents.', 
+                    r'', 
+                    page_path
+            )
 
             insert(self.db_path, name, self.type, str(page_path))
