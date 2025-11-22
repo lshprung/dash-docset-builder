@@ -1,4 +1,5 @@
 __all__ = [
+        'build_docset_skeleton',
         'create_table',
         'get_title',
         'Gnu_Index_Terms',
@@ -6,10 +7,11 @@ __all__ = [
         'Stylesheet_Setter'
 ]
 
+from .build_docset_skeleton import build_docset_skeleton
 from .create_table import create_table
 from .get_title import get_title
-from .insert import insert
 from .gnu import Gnu_Index_Terms
+from .insert import insert
 from .set_stylesheet import Stylesheet_Setter
 
 # FIXME terrible practice, need to find a better way to hide these
