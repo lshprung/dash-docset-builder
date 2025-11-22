@@ -9,7 +9,7 @@ import re
 from .create_table import create_table
 from .insert import insert
 
-class Index_Terms:
+class Gnu_Index_Terms:
     def __init__(self, 
                  type: str, 
                  db_path: str, 
