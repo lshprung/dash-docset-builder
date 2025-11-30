@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup, Tag
 import logging
-import os
+from pathlib import Path
 from pprint import pformat
 import re
 
@@ -58,16 +58,15 @@ class Gnu_Index_Terms:
             name = name.lstrip()
             name = re.sub(r'\s{3,}', ' ', name)
 
-            # TODO make this a Pathlib object instead
-            page_path = str(term.a['href'])
-            page_path = os.path.join(
-                    os.path.dirname(self.html_path), 
-                    page_path
-            )
-            page_path = re.sub(
-                    r'^.*Contents.Resources.Documents.', 
-                    r'', 
-                    page_path
-            )
+            page_path: Path = Path(self.html_path).parent.joinpath(
+                    str(term.a['href'])
+            ).resolve()
+            # remove part of path leading up to actual interest
+            for i in range(len(page_path.parts)):
+                if page_path.parts[i:i+2] == (
+                        "Contents", "Resources", "Documents"
+                ):
+                    page_path = Path(*page_path.parts[i+3:])
+                    break
 
             insert(self.db_path, name, self.type, str(page_path))

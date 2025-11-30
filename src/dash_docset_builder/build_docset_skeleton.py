@@ -4,8 +4,6 @@ import os
 from pathlib import Path
 
 def build_docset_skeleton(docset_name: str, build_dir: Path | None = None):
-    # TODO determine default behavior if no build_dir is specified
-    # for now, just make it the cwd
     if build_dir is None:
         build_dir = Path('.')
 
