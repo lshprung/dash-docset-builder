@@ -3,7 +3,13 @@
 import os
 from pathlib import Path
 
-def build_docset_skeleton(docset_name: str, build_dir: Path | None = None):
+def build_docset_skeleton(
+        docset_name: str, 
+        build_dir: Path | None = None
+) -> dict[str, Path] | None:
+
+    output: dict[str, Path] = {}
+
     if build_dir is None:
         build_dir = Path('.')
 
@@ -16,8 +22,15 @@ def build_docset_skeleton(docset_name: str, build_dir: Path | None = None):
         exit()
 
     # create the directories
-    docset_dir = build_dir.joinpath(f"{docset_name}.docset")
-    contents_dir = docset_dir.joinpath("Contents")
-    resources_dir = contents_dir.joinpath("Resources")
-    documents_dir = resources_dir.joinpath("Documents")
-    documents_dir.mkdir(parents = True, exist_ok = True)
+    output["docset_dir"] = build_dir.joinpath(f"{docset_name}.docset")
+    output["contents_dir"] = output["docset_dir"].joinpath("Contents")
+    output["resources_dir"] = output["contents_dir"].joinpath("Resources")
+    output["documents_dir"] = output["resources_dir"].joinpath("Documents")
+    output["documents_dir"].mkdir(parents = True, exist_ok = True)
+
+    # create references to where files should go
+    output["info_plist_file"] = output["contents_dir"].joinpath("Info.plist")
+    output["index_file"] = output["resources_dir"].joinpath("docSet.dsidx")
+    output["icon_file"] = output["docset_dir"].joinpath("icon.png")
+
+    return output
