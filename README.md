@@ -1,7 +1,7 @@
 # Dash Docset Builder
 
 This is a repository providing common sources for building various 
-[Dash](https://kapeli.com/dash) docsets, as required by the python modules 
+[Dash](https://kapeli.com/dash) docsets, as required by the python packages 
 listed below.
 
 |                                                     |Upstream|Latest Release|
@@ -20,6 +20,14 @@ listed below.
 |[GNU Libtool](https://github.com/lshprung/gnu-libtool-dash-docset)|[link](https://www.gnu.org/software/libtool/)|[link](https://github.com/lshprung/gnu-libtool-dash-docset/releases/latest)|
 |[GNU Make](https://github.com/lshprung/gnu-make-dash-docset)|[link](http://www.gnu.org/software/make/)|[link](https://github.com/lshprung/gnu-make-dash-docset/releases/latest)|
 |[ncurses](https://github.com/lshprung/ncurses-dash-docset)|[link](https://invisible-island.net/ncurses/)|[link](https://github.com/lshprung/ncurses-dash-docset/releases/latest)|
+
+Library documentation is generated using doxygen. In the base of the repo, run
+
+```
+$ doxygen
+```
+
+HTML documentation will be generated under `docs/`
 
 <!-- TODO:
   BUILD_FROM_SOURCE - compile the documentation from upstream, rather than downloading from a prebuild source (this is the default behavior for many docset generation scripts)

@@ -1,11 +1,17 @@
 import logging
+from pathlib import Path
 from pprint import pformat
 import sqlite3
 
-logging.basicConfig(level="DEBUG")
+def insert(db_path: Path, name: str, type: str, page_path: str) -> None:
+    """! Insert an index entry into the sqlite table
 
-def insert(db_path: str, name: str, type: str, page_path: str) -> None:
-    logging.debug("Inserting into " + db_path + " with the following:")
+    @param db_path      sqlite database file path
+    @param name         index entry name
+    @param type         index entry type
+    @param page_path    index entry page path
+    """
+    logging.debug("Inserting into " + str(db_path) + " with the following:")
     logging.debug("\tname = " + name)
     logging.debug("\ttype = " + type)
     logging.debug("\tpage_path = " + page_path)

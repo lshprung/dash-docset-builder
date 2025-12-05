@@ -1,5 +1,5 @@
 __all__ = [
-        'build_docset_skeleton',
+        'DocsetSkeleton',
         'create_table',
         'get_title',
         'get_argparse_template',
@@ -9,7 +9,7 @@ __all__ = [
 ]
 
 from .argparse_template import get_argparse_template
-from .build_docset_skeleton import build_docset_skeleton
+from .docset_skeleton import DocsetSkeleton
 from .create_table import create_table
 from .get_title import get_title
 from .gnu import Gnu_Index_Terms
