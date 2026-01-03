@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dash_docset_builder"
-version = "2025.12.16"
+version = "2026.01.03"
 authors = [
 	{ name="Louie Shprung", email="lshprung@tutanota.com" }
 ]

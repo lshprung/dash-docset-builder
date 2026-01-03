@@ -14,7 +14,6 @@ class Gnu_Index_Terms:
                  type: str, 
                  db: DB, 
                  html_path: Path, 
-                 index_entry_class: str | None = None
     ) -> None:
         """! Initializer
 
@@ -22,29 +21,31 @@ class Gnu_Index_Terms:
                                     https://kapeli.com/docsets#supportedentrytypes)
         @param db                   sqlite database for the docset
         @param html_path            index file html path
-        @param index_entry_class    optionally look for a html class name that 
-                                    index entries belong to
 
-        This class does everything in the constructor. If index_entry_class is
-        not included, then a colon (':') will be searched for instead to 
-        determine what on the page is an entry to index.
+        If index_entry_class is not included, then a colon (':') will be 
+        searched for instead to determine what on the page is an entry to 
+        index.
         """
         self.type: str = type
         self.db: DB = db
         self.html_path: Path = html_path
-        self.index_entry_class: str | None = index_entry_class
 
-        self.insert_index_terms()
+    def insert_index_terms(self, index_entry_class: str | None = None) -> int:
+        """! Determine the list of terms from the index and insert each one
 
-    def insert_index_terms(self) -> None:
-        """! Determine the list of terms from the index and insert each one"""
+        @param index_entry_class    optionally look for a html class name that 
+                                    index entries belong to
 
+        @return    the number of inserted terms
+        """
+
+        count: int = 0
         soup: BeautifulSoup = BeautifulSoup(
                 open(self.html_path), 'html.parser'
         )
         terms: list[Tag]
-        if self.index_entry_class:
-            terms = soup.find_all(class_=self.index_entry_class)
+        if index_entry_class:
+            terms = soup.find_all(class_=index_entry_class)
         else:
             terms = soup.find_all("td")
 
@@ -54,20 +55,24 @@ class Gnu_Index_Terms:
 
         # try to insert via looking for colon if no class to look for is 
         # provided
-        if self.index_entry_class is None:
+        if index_entry_class is None:
             for term in filter(
                     lambda x: re.search(
                         r'.*:$', x.get_text().lstrip().rstrip()
                     ), 
                     terms
             ):
-                self.insert_term(term)
-            return
+                self._insert_term(term)
+                count += 1
 
-        for term in terms:
-            self.insert_term(term)
+        else:
+            for term in terms:
+                self._insert_term(term)
+                count += 1
 
-    def insert_term(self, term: Tag) -> None:
+        return count
+
+    def _insert_term(self, term: Tag) -> None:
         """! Cleanup the name and link, and insert
 
         @param term    html tag of the term to insert
@@ -92,4 +97,3 @@ class Gnu_Index_Terms:
                     break
 
             self.db.insert(name, self.type, str(page_path))
-            return
