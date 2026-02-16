@@ -8,7 +8,7 @@ listed below.
 |-----------------------------------------------------|--------|--------------|
 |[debmake](https://github.com/lshprung/debmake-dash-docset)|[link](https://salsa.debian.org/debian/debmake)|[link](https://github.com/lshprung/debmake-dash-docset/releases/latest)| <!-- Done -->
 |[flex](https://github.com/lshprung/flex-dash-docset)|[link](https://github.com/westes/flex)|[link](https://github.com/lshprung/flex-dash-docset/releases/latest)| <!-- Done -->
-|[glibc (GNU C Library](https://github.com/lshprung/gnu-libc-dash-docset)|[link](https://www.gnu.org/software/libc/libc.html)|[link](https://github.com/lshprung/gnu-libc-dash-docset/releases/latest)| <!-- Done -->
+|[glibc (GNU C Library)](https://github.com/lshprung/gnu-libc-dash-docset)|[link](https://www.gnu.org/software/libc/libc.html)|[link](https://github.com/lshprung/gnu-libc-dash-docset/releases/latest)| <!-- Done -->
 |[GNU Autoconf](https://github.com/lshprung/gnu-autoconf-dash-docset)|[link](https://www.gnu.org/software/autoconf/)|[link](https://github.com/lshprung/gnu-autoconf-dash-docset/releases/latest)| <!-- TODO -->
 |[GNU Autoconf Archive](https://github.com/lshprung/gnu-autoconf-archive-dash-docset)|[link](https://www.gnu.org/software/autoconf-archive/)|[link](https://github.com/lshprung/gnu-autoconf-archive-dash-docset/releases/latest)| <!-- TODO -->
 |[GNU Automake](https://github.com/lshprung/gnu-automake-dash-docset)|[link](https://www.gnu.org/software/automake/)|[link](https://github.com/lshprung/gnu-automake-dash-docset/releases/latest)| <!-- TODO -->
