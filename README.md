@@ -19,6 +19,7 @@ listed below.
 |[GNU Guix](https://github.com/lshprung/gnu-guix-dash-docset)|[link](https://guix.gnu.org/)|[link](https://github.com/lshprung/gnu-guix-dash-docset/releases/latest)| <!-- TODO -->
 |[GNU Libtool](https://github.com/lshprung/gnu-libtool-dash-docset)|[link](https://www.gnu.org/software/libtool/)|[link](https://github.com/lshprung/gnu-libtool-dash-docset/releases/latest)| <!-- TODO -->
 |[GNU Make](https://github.com/lshprung/gnu-make-dash-docset)|[link](http://www.gnu.org/software/make/)|[link](https://github.com/lshprung/gnu-make-dash-docset/releases/latest)| <!-- TODO -->
+|[meson](https://github.com/lshprung/meson-dash-docset)|[link](https://mesonbuild.com/)|[link](https://github.com/lshprung/meson-dash-docset/releases/latest)| <!-- TODO -->
 |[ncurses](https://github.com/lshprung/ncurses-dash-docset)|[link](https://invisible-island.net/ncurses/)|[link](https://github.com/lshprung/ncurses-dash-docset/releases/latest)| <!-- TODO -->
 
 Library documentation is generated using doxygen. In the base of the repo, run
